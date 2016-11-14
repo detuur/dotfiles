@@ -1,0 +1,3 @@
+[submodule "vim-YouCompleteMe/.vim_runtime/sources_non_forked/YouCompleteMe"]
+	path = vim-YouCompleteMe/.vim_runtime/sources_non_forked/YouCompleteMe
+	url = git://github.com/Valloric/YouCompleteMe.git
