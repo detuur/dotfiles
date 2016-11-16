@@ -1,3 +1,8 @@
 [submodule "vim-YouCompleteMe/.vim_runtime/sources_non_forked/YouCompleteMe"]
 	path = vim-YouCompleteMe/.vim_runtime/sources_non_forked/YouCompleteMe
-	url = git://github.com/Valloric/YouCompleteMe.git
+    url = git://github.com/Valloric/YouCompleteMe.git
+    branch = master
+[submodule "vim/.vim_runtime"]
+	path = vim/.vim_runtime
+    url = git://github.com/detuur/vimrc.git
+    branch = master
