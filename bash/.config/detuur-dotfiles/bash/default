@@ -1,2 +1,3 @@
+cd ~/.config/detuur-dotfiles/bash/   #this file is *always* in this location
 source aliases
 source functions
