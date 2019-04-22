@@ -1,0 +1,38 @@
+transfer() {
+    # write to output to tmpfile because of progress bar
+    tmpfile=$( mktemp -t transferXXX )
+    curl --progress-bar --upload-file $1 https://transfer.sh/$(basename $1) >> $tmpfile;
+    cat $tmpfile;
+    rm -f $tmpfile;
+}
+
+dush() {
+    if [ $# -eq 0 ]; then
+        du -sh *
+        return
+    fi
+
+    if [ $# -eq 1 ]; then
+        if [ "$1" == "*" ]; then
+            du -sh *
+            return
+        fi
+
+        if [ "${1: -1}" == "/" ]; then
+            a="$1"
+            a+="*"
+            du -sh $a
+            return
+        fi
+
+        du -sh "$1"
+        return
+    fi
+
+    if [ $# -gt 1 ]; then
+        du -sh "$@"
+        return
+    fi
+}
+
+alias transfer=transfer
