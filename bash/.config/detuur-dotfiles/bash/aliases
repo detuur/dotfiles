@@ -1,3 +1,5 @@
 alias ipbra='ip -br -c -4 a'
 alias ll='exa -lahF'
+alias llg='exa -lahFg'
+alias tree='exa -TlahF'
 alias lsblk='lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINT,UUID,LABEL'
