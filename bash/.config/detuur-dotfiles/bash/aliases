@@ -1,6 +1,8 @@
 alias ipbra='ip -br -c -4 a'
 alias ll='exa -lahF'
 alias llg='exa -lahFg'
+# Make a mental note to one day replace these with
+# tr ... tree ... treee ... treeee ... etc
 alias tree='exa -TlahF'
 alias tree2='exa -TlahF -L 2'
 alias tree3='exa -TlahF -L 3'
